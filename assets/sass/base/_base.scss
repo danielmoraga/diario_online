@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+
+   @include respond-to('small') {
+   }
+    
+}
+
+
+#site-wrapper {
+    margin: 0 auto;
+
+    @include respond-to('small') {
+        width: 100%;
+    }
+    @include respond-to('medium') {
+        width: 100%;
+
+    }
+    @include respond-to('large') {
+        width: 960px;
+    }
+    @include respond-to('extra-large') {
+        width: 960px;
+    }
+}
